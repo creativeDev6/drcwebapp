@@ -44,6 +44,9 @@ public class SearchController {
 		logger.info("search=" + searchPhrase);
 		List<SearchResult> resultList = null;
 		try {
+			/*
+			 * Regex Suche Schnittstelle
+			 */
 			resultList = searcher.search(searchPhrase);
 		} catch (ParseException | IOException e) {
 			e.printStackTrace();
